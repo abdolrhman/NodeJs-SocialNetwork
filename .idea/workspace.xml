@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983127f1-fef6-4c0c-8e2c-215d11142a6b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,10 +19,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="512">
-                <caret line="95" column="61" selection-start-line="95" selection-start-column="61" selection-end-line="95" selection-end-column="61" />
+              <first_editor relative-caret-position="54">
+                <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/models/Tag.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -211,12 +219,12 @@
       <updated>1573321851364</updated>
       <workItem from="1573321852623" duration="1444000" />
       <workItem from="1573324161477" duration="34508000" />
-      <workItem from="1573401681104" duration="12960000" />
+      <workItem from="1573401681104" duration="13063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48912000" />
+    <option name="totallyTimeSpent" value="49015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -309,13 +317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Tag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
@@ -400,11 +401,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/Tag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="512">
-            <caret line="95" column="61" selection-start-line="95" selection-start-column="61" selection-end-line="95" selection-end-column="61" />
+          <first_editor relative-caret-position="54">
+            <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
           </first_editor>
           <second_editor />
         </state>

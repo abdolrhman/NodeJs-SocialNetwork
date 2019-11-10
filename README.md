@@ -1,8 +1,7 @@
 #   DLC-Task-NodeJs-SocialNetwork
 
 
-> Express WebApplication for Social network with REST API with JWT Authentication and support for sqlite, mysql, and postgresql
-
+> Express WebApplication for Social network with REST API
 
 - authentication via [JWT](https://jwt.io/)
 - Create Posts with Hashtag
@@ -93,7 +92,7 @@ All test  uses [Jest](https://github.com/facebook/jest) and [supertest](https://
 User | Post | Tag | posts_tag | user_posts
 ------------ | ------------- | ------------- | ------------- | ------------- 
 UserName | Content  | Name | post_id | post_id
-firstName, lastName, emailName | ... | ... | tag_id | user_id
+firstName, lastName, emailName, password | ... | ... | tag_id | user_id
 
 ### Controller
 
