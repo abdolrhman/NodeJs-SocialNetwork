@@ -16,6 +16,7 @@
 
 - [Install & Use](#install-and-use)
 - [Folder Structure](#folder-structure)
+- [DataBase Structure](#database-structure)
 - [User Authentication](#user-auth)
 - [Post Controller](#post-controller)
 - [User Controller](#user-controller)
@@ -85,6 +86,14 @@ This boilerplate has 4 main directories:
 ## Test
 
 All test  uses [Jest](https://github.com/facebook/jest) and [supertest](https://github.com/visionmedia/superagent) for integration testing.
+
+
+## Database Structure
+
+User | Post | Tag | posts_tag | user_posts
+------------ | ------------- | ------------- | ------------- | ------------- 
+UserName | Content  | Name | post_id | post_id
+firstName, lastName, emailName | ... | ... | tag_id | user_id
 
 ### Controller
 
