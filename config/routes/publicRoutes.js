@@ -3,6 +3,9 @@ const publicRoutes = {
   'POST /register': 'UserController.register', // alias for POST /user
   'POST /login': 'UserController.login',
   'POST /validate': 'UserController.validate',
+  //GOT
+  'GET /getAllAges': 'GOTController.allAges',
+  'GET /ageByName/:name': 'GOTController.ageByName',
 };
 
 module.exports = publicRoutes;

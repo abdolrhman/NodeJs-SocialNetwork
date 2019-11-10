@@ -116,7 +116,7 @@ const PostController = () => {
 			create,
 			getPostsByHashtag,
 			mostRecentPosts,
-			getPostsBytag: getPostsByTag
+			getPostsByTag
 		};
 	}
 ;
