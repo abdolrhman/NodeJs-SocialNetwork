@@ -7,6 +7,7 @@ const privateRoutes = {
   // Posts
   'POST /post': 'PostController.create',
   'POST /post/ByHashtags': 'PostController.getPostsByHashtag',
+  'GET /post/tag/:tag': 'PostController.getPostsByTag',
   'GET /posts': 'PostController.mostRecentPosts',
 
 };

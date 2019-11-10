@@ -84,7 +84,20 @@ const PostController = () => {
 				return res.status(500).json({msg: 'Internal server error'});
 			}
 		};
+		const getPostsByTag = async (req, res) => {
+			try {
+				const posts = await Post.findAll({
+					include: [
+						{model: Tag, as: 'HashTagged', where: {name: req.params.tag}}
+					]
+				});
 
+				return res.status(200).json({posts});
+			} catch (err) {
+				console.log(err);
+				return res.status(500).json({msg: 'Internal server error'});
+			}
+		};
 		const mostRecentPosts = async (req, res) => {
 			try {
 
@@ -102,7 +115,8 @@ const PostController = () => {
 		return {
 			create,
 			getPostsByHashtag,
-			mostRecentPosts
+			mostRecentPosts,
+			getPostsBytag: getPostsByTag
 		};
 	}
 ;
