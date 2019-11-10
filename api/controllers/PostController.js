@@ -1,6 +1,7 @@
 const Post = require('../models/Post');
 const Tag = require('../models/Tag');
 const User = require('../models/User');
+// const mailer = require('../services/mail.service');
 const Sequelize = require('sequelize');
 
 const PostController = () => {
@@ -9,40 +10,57 @@ const PostController = () => {
 			const {body} = req;
 			try {
 
-				const tags = body.tags.map(tag => Tag.findOrCreate({where: {name: tag}, defaults: {name: tag}})
-					.spread((tag, created) => tag['dataValues']['id']));
 
-				// const users = body.mentioned_users.map(userName => User.findAll({
-				// 	where: {userName: userName},
-				// 	defaults: {userName: userName}
-				// })
-				// 	.spread((userName, created) => {
-				//
-				// 		userName['dataValues']['id']
-				// 	}));
-				//
-				// Promise.all(users).then(function (results) {
-				// 	console.log(results)
-				// });
-				// return;
-				//we find the user even we if we have the userID from TOKEN
-				//as if we changed the userId of the user or we deleted him
-				//while his token stay alive
-				User.findByPk(AuthenticatedUserId)
-					.then(() => Post.create({
-						content: body.content,
-						UserId: AuthenticatedUserId
-					}))
-					.then(post => Promise.all(tags)
+				let ThereAreMentionedUsers = body.mentioned_users && body.mentioned_users.length;
+				let ThereAreTags = body.tags && body.tags.length;
+				let thereAreMentionedUsersAndTags = ThereAreMentionedUsers && ThereAreTags;
+
+				let tags = [];
+				if (ThereAreTags) {
+					tags = body.tags.map(tag => Tag.findOrCreate({where: {name: tag}, defaults: {name: tag}})
+						.spread((tag, created) => tag['dataValues']['id']));
+				}
+
+				if (ThereAreMentionedUsers) {
+					let usersIds = [];
+					const users = await User.findAll({
+						where: {userName: {[Sequelize.Op.in]: body.mentioned_users}}
+					});
+
+					users.forEach((user) => {
+						usersIds.push(user['dataValues']['id']);
+						//mailer not tested yet ...
+						// mailer(user)
+					});
+				}
+
+				const post = Post.create({
+					content: body.content,
+					UserId: AuthenticatedUserId
+				});
+				if (thereAreMentionedUsersAndTags) {
+					post.then(storedTags => {
+						post.addHashTagged(storedTags);
+						post.addUserMentioned(usersIds);
+					}).then(() => post);
+				} else if (ThereAreMentionedUsers) {
+					post.then(() => {
+						post.addUserMentioned(usersIds);
+					}).then(() => post);
+				} else if (ThereAreTags) {
+					post.then(post => Promise.all(tags)
 						.then(storedTags => {
-							post.addHashTagged(storedTags)
+							post.addHashTagged(storedTags);
 						}).then(() => post))
-					.then(post => Post.findOne({
-						where: {id: post['dataValues']['id']},
-						include: [User, {model: Tag, as: 'HashTagged'}]
-					}))
+				}
+
+				post.then(post => Post.findOne({
+					where: {id: post['dataValues']['id']},
+					include: [User, {model: Tag, as: 'HashTagged'}]
+				}))
 					.then(postWithAssociations => res.json(postWithAssociations))
 					.catch(err => res.status(400).json({err: `User with id = [${AuthenticatedUserId}] doesn\'t exist. ${err}`}))
+
 			} catch
 				(err) {
 				console.log(err);

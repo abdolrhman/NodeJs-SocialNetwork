@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="983127f1-fef6-4c0c-8e2c-215d11142a6b" name="Default Changelist" comment="" />
+    <list default="true" id="983127f1-fef6-4c0c-8e2c-215d11142a6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controllers/PostController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/PostController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,22 +20,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="162">
-                <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/api/controllers/PostController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/controllers/PostController.js">
+        <entry file="file://$PROJECT_DIR$/api/services/mail.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/models/Post.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="485">
-              <caret line="86" column="21" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="21" />
+              <caret line="34" column="20" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -64,7 +76,6 @@
       <find>verify</find>
       <find>addta</find>
       <find>blog</find>
-      <find>tags</find>
       <find>postWithAssociations</find>
       <find>data</find>
       <find>post</find>
@@ -72,7 +83,17 @@
       <find>validate</find>
       <find>seq</find>
       <find>getPostsByHashtag</find>
+      <find>in</find>
+      <find>.in</find>
+      <find>aaa</find>
+      <find>mailOptions</find>
+      <find>length</find>
+      <find>tags</find>
+      <find>map</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -87,12 +108,13 @@
         <option value="$PROJECT_DIR$/api/services/db.service.js" />
         <option value="$PROJECT_DIR$/api/api.js" />
         <option value="$PROJECT_DIR$/api/models/Post.js" />
-        <option value="$PROJECT_DIR$/api/controllers/PostController.js" />
         <option value="$PROJECT_DIR$/api/controllers/UserController.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/config/routes/privateRoutes.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/api/services/mail.service.js" />
+        <option value="$PROJECT_DIR$/api/controllers/PostController.js" />
       </list>
     </option>
   </component>
@@ -101,6 +123,7 @@
     <option name="width" value="1164" />
     <option name="height" value="829" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -111,52 +134,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="DLC-Task" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DLC-Task" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="DLC-Task" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DLC-Task" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="DLC-Task" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DLC-Task" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="policies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="express-rest-api-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="express-rest-api-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,6 +155,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -202,17 +193,18 @@
       <updated>1573321851364</updated>
       <workItem from="1573321852623" duration="1444000" />
       <workItem from="1573324161477" duration="34508000" />
+      <workItem from="1573401681104" duration="10458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35952000" />
+    <option name="totallyTimeSpent" value="46410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24904701" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1797967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24968234" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -240,9 +232,7 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE" />
     <entry file="file://$PROJECT_DIR$/test/controllers/UserController.test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -348,16 +338,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="38">
-            <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -373,17 +354,13 @@
     <entry file="file://$PROJECT_DIR$/.eslintrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/models/Post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" selection-start-line="23" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/PostController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="21" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -394,13 +371,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="162">
-            <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/api/models/Post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/services/mail.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/PostController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
         </state>
       </provider>
     </entry>
