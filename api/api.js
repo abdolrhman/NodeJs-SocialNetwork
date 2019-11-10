@@ -50,6 +50,11 @@ app.all('/private/*', (req, res, next) => auth(req, res, next));
 // fill routes for express application
 app.use('/public', mappedOpenRoutes);
 app.use('/private', mappedAuthRoutes);
+app.get("*", (req, res) =>
+    res.status(200).send({
+        message: "Welcome to the beginning of nothingness."
+    })
+);
 
 server.listen(config.port, () => {
   if (environment !== 'production' &&
