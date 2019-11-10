@@ -19,7 +19,7 @@
 - [User Authentication](#user-auth)
 - [Post Controller](#post-controller)
 - [User Controller](#user-controller)
-
+- [GOT API Implementation](#GOT-Impl)
 ## Install and Use
 
 Start by cloning this repository
@@ -123,5 +123,8 @@ This command:
 - runs `jest --coverage` for testing with [Jest](https://github.com/facebook/jest) and the coverage
 - drops the `database.sqlite` after the test
 
+## GOT API Implementation
+Implemented some APIs from this site ([GOT SHOW](https://api.got.show/))<br>
+check out public routes
 ## Implementation 
 made for DLC. Task assessment
